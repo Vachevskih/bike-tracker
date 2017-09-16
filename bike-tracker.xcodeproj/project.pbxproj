@@ -14,6 +14,10 @@
 		BA37DC291F6D399600E4C115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA37DC271F6D399600E4C115 /* LaunchScreen.storyboard */; };
 		BA37DC341F6D399600E4C115 /* bike_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37DC331F6D399600E4C115 /* bike_trackerTests.swift */; };
 		BA37DC3F1F6D399600E4C115 /* bike_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA37DC3E1F6D399600E4C115 /* bike_trackerUITests.swift */; };
+		BA37DC4E1F6D3DB700E4C115 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA37DC4D1F6D3DB700E4C115 /* MapKit.framework */; };
+		BA59E79A1F6D645300224972 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA59E7991F6D645300224972 /* UIView.swift */; };
+		BAAB80831F6D6DC40033093C /* StopwatchScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAB80821F6D6DC40033093C /* StopwatchScreenState.swift */; };
+		BAAB80851F6D726F0033093C /* StopwatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAB80841F6D726F0033093C /* StopwatchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 		BA37DC3A1F6D399600E4C115 /* bike-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bike-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA37DC3E1F6D399600E4C115 /* bike_trackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bike_trackerUITests.swift; sourceTree = "<group>"; };
 		BA37DC401F6D399600E4C115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA37DC4D1F6D3DB700E4C115 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA37DC4F1F6D3E4600E4C115 /* bike-tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "bike-tracker.entitlements"; sourceTree = "<group>"; };
+		BA59E7991F6D645300224972 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		BAAB80821F6D6DC40033093C /* StopwatchScreenState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchScreenState.swift; sourceTree = "<group>"; };
+		BAAB80841F6D726F0033093C /* StopwatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA37DC4E1F6D3DB700E4C115 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 				BA37DC321F6D399600E4C115 /* bike-trackerTests */,
 				BA37DC3D1F6D399600E4C115 /* bike-trackerUITests */,
 				BA37DC1C1F6D399600E4C115 /* Products */,
+				BA37DC4C1F6D3DB700E4C115 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +108,9 @@
 		BA37DC1D1F6D399600E4C115 /* bike-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				BAAB80811F6D6D8D0033093C /* Stopwatch */,
+				BA59E7981F6D637700224972 /* Extensions */,
+				BA37DC4F1F6D3E4600E4C115 /* bike-tracker.entitlements */,
 				BA37DC1E1F6D399600E4C115 /* AppDelegate.swift */,
 				BA37DC201F6D399600E4C115 /* ViewController.swift */,
 				BA37DC221F6D399600E4C115 /* Main.storyboard */,
@@ -123,6 +137,32 @@
 				BA37DC401F6D399600E4C115 /* Info.plist */,
 			);
 			path = "bike-trackerUITests";
+			sourceTree = "<group>";
+		};
+		BA37DC4C1F6D3DB700E4C115 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA37DC4D1F6D3DB700E4C115 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA59E7981F6D637700224972 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA59E7991F6D645300224972 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAAB80811F6D6D8D0033093C /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				BAAB80821F6D6DC40033093C /* StopwatchScreenState.swift */,
+				BAAB80841F6D726F0033093C /* StopwatchController.swift */,
+			);
+			name = Stopwatch;
+			path = Extensions/Stopwatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +235,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6WDJKU2H55;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BA37DC2E1F6D399600E4C115 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -264,6 +312,9 @@
 			files = (
 				BA37DC211F6D399600E4C115 /* ViewController.swift in Sources */,
 				BA37DC1F1F6D399600E4C115 /* AppDelegate.swift in Sources */,
+				BAAB80851F6D726F0033093C /* StopwatchController.swift in Sources */,
+				BA59E79A1F6D645300224972 /* UIView.swift in Sources */,
+				BAAB80831F6D6DC40033093C /* StopwatchScreenState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +567,7 @@
 				BA37DC451F6D399600E4C115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA37DC461F6D399600E4C115 /* Build configuration list for PBXNativeTarget "bike-trackerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +576,7 @@
 				BA37DC481F6D399600E4C115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA37DC491F6D399600E4C115 /* Build configuration list for PBXNativeTarget "bike-trackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +585,7 @@
 				BA37DC4B1F6D399600E4C115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
